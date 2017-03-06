@@ -1,0 +1,725 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.wrapper {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+nav.wrapper {
+  padding: 60px;
+}
+
+.wrapper2 {
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+	width: 100%;
+	background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/hero_012.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+}
+
+header nav.wrapper p {
+  color: lightgrey;
+  text-align: right;
+}
+
+div.logo {
+  display: inline-block;
+  float: left;
+  width: 20%;
+}
+
+ul.main-nav {
+ width: 60%;
+ float: left;
+ padding: 0;
+}
+
+ul.main-nav li {
+  float: left;
+  display: inline-block;
+  color: white;
+  margin: 0 25px;
+}
+
+ul.main-nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.main-nav li:hover{
+ border-bottom: 2px solid #b32440;
+}
+
+ul.favicon {
+  width: 20%;
+  float: left;
+  text-align: right;
+}
+
+ul.favicon li {
+  display: inline-block;
+}
+ul.favicon li i{
+ /* float: left;
+  display: inline-block;*/
+  padding: 10px;
+  text-align: right;
+}
+
+ul.favicon li i:hover{
+ border-bottom: 2px solid #b32440;
+}
+
+ul.favicon li a i{
+  color: black;
+  text-decoration: none;
+  float: left;
+}
+
+
+div.title {
+  margin: 0 auto;
+  width: 50%;
+  padding: 200px 0 300px 0;
+}
+
+.bigEntrance{
+  animation-name: bigEntrance;
+  -webkit-animation-name: bigEntrance;  
+
+  animation-duration: 1.6s; 
+  -webkit-animation-duration: 1.6s;
+
+  animation-timing-function: ease-out;  
+  -webkit-animation-timing-function: ease-out;  
+
+  visibility: visible !important;     
+}
+
+@keyframes bigEntrance {
+  0% {
+    transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+    opacity: 0.2;
+  }
+  30% {
+    transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);    
+    opacity: 1;
+  }
+  45% {
+    transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);   
+    opacity: 1;
+  } 
+  75% {
+    transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);    
+    opacity: 1;
+  } 
+  100% {
+    transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }   
+}
+
+@-webkit-keyframes bigEntrance {
+  0% {
+    -webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+    opacity: 0.2;
+  }
+  30% {
+    -webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);    
+    opacity: 1;
+  }
+  45% {
+    -webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);   
+    opacity: 1;
+  } 
+  75% {
+    -webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);    
+    opacity: 1;
+  } 
+  100% {
+    -webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }       
+}
+
+#animate1 {
+  visibility: hidden;
+}
+
+h2.headertitle {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+div.title button {
+    background-color: #b32440;
+    border: 1px solid #b32440;
+    border-radius: 50px;
+    color: white;
+    padding: 20px 20px;
+    margin: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+div.title img, div.title button {
+  display: block;
+  margin: 0 auto;
+}
+
+section.one, section.three {
+	background-color: #F6F4F1;
+	width: 100%;
+}
+
+div.gridone {
+	max-width: 60%;
+	margin: 0 auto;
+  transform: scale(1.1);
+  position: relative;
+  z-index: 2;
+  top: 10px;
+}
+
+div.gridone img {
+	float: left;
+
+}
+
+div.textbox{
+	background-color: white;
+	float: left;
+  padding: 10px;
+}
+
+div.textbox h2 {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 5px solid lightgrey;
+}
+
+div.textbox p {
+  color: lightgrey;
+}
+
+div.textbox button {
+    background-color: #ffffff;
+    border: solid 2px #b32440;
+    border-radius: 50px;
+    color: #b32440;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+div.title button:hover, div.textbox button:hover {
+    background-color: goldenrod;
+    color: white;
+}
+
+
+div.about, img.about{
+	max-width: 60%;
+	height: 368px;
+	text-align: center;
+}
+
+div.reserve, img.reserve {
+	max-width: 40%;
+	height: 368px;
+	text-align: center;
+}
+
+section.two {
+    background: url(assets/pinapple_row2.jpg);
+    padding: 100px 0;
+}
+
+section.two, section.four {
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlaytwo, .overlayfour {
+  background-color: rgba(211, 211, 211, 0.8);
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.overlaytwotext, .overlayfourtext {
+  top: 30px;
+}
+
+section.two p, section.four p {
+  color: white;
+  text-align: center;
+}
+
+section.two img, section.four img {
+  display: block;
+  margin: 0 auto;
+}
+
+div.fourpic {
+    max-width: 60%;
+    margin: 0 auto;
+    position: relative;
+    transform: scale(1.1);
+    z-index: 5;
+    margin-top: -80px;
+}
+
+div.menubutton {
+  width: 300px;
+  height: 300px;
+  background-color: #b32440;
+  box-shadow: 1px -1px 0 20px rgba(179, 36, 64, 0.6);
+  position: absolute;
+  border-radius: 50%;
+  left: 420px;
+  top: 220px;
+}
+
+div.menubutton h2, div.menubutton p {
+  color: white;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+}
+
+div.menubutton h2 {
+  top: 80px;
+  left: 80px;
+}
+
+div.menubutton p {
+   top: 200px;
+  left: 110px;
+  border-bottom: solid white;
+}
+
+div.menubutton img.menu {
+  position: absolute;
+   top: 100px;
+  left: 70px;
+}
+
+div.fourpic img {
+  float: left;
+  max-width: 50%;
+  border: 15px solid rgba(255,255,255, 0.1);
+}
+
+div.menubutton img.rib {
+  position: absolute;
+       top: 205px;
+    left: 125px;
+}
+
+section.four {
+    background: url(assets/berry_pie2.jpg);
+    padding: 140px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+section.five {
+  padding: 30px 0;
+}
+
+section.five div.quote {
+  float: left;
+  font-size: 80px;
+  color: lightgrey;
+  text-align: bottom;
+  margin-right: 10px;
+  padding-top: 20px;
+}
+
+.lorem {
+  float: left;
+  border: 2px solid red;
+  margin: 0 auto;
+  width: 100%;
+   margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 80px;
+}
+
+.lorem p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p.quoteby {
+  margin: 0;
+  color: lightgrey;
+}
+
+.wine {
+  background-image: url(assets/wine2.jpg);
+  background-size: cover;
+  padding: 160px 0;
+  background-position: center bottom;
+}
+
+.subscribe p{
+  text-align: left;
+  color: white;
+  padding-left: 590px;
+}
+
+input[type=email] {
+  padding: 10px;
+  padding-right: 520px;
+  margin: 0 auto;
+  display: block;
+}
+
+.texture {
+  background-image: url(assets/footer_bg_02.jpg);
+  background-size: cover;
+  padding: 130px 0;
+  position: relative;
+}
+
+div.top-i {
+  position: absolute;
+  top: -45px;
+  left: 900px;
+}
+
+div.locations {
+  width: 40%;
+  display: inline-block;
+  margin-left: 150px;
+}
+
+div.hours {
+  width: 50%;
+  display: inline-block;
+}
+
+div.locations h1{
+  color: lightgrey;
+  float: left;
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+}
+
+div.hours h1{
+  color: lightgrey;
+  float: left;
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+}
+
+div.address p{
+  color: lightgrey;
+  float: left;
+  width: 50%;
+  margin: 0;
+  display: inline-block;
+}
+
+div.hours p{
+  color: lightgrey;
+  float: left;
+  width: 33.3%;
+  margin: 0;
+}
+
+.copyright {
+  background-color: black;
+  color: grey;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px;
+}
+
+div.copyright p{
+  margin: 0;
+  display: inline;
+}
+
+.project {
+  float: left;
+}
+
+.tuntun {
+  float: right;
+}
+
+
+
+/*
+StyleSheet for About Page Below*/
+
+
+
+.wrapperabout {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.wrapperabout2 {
+  width: 770px;
+  margin: 0 auto;
+  margin-left: 50px;
+}
+
+header.about {
+  width: 100%;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/hero_02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav.about {
+  background-color: white;
+  padding-top: 20px;
+}
+
+ul.about-nav {
+ width: 60%;
+ float: left;
+ padding: 0;
+ text-align: center;
+}
+
+ul.about-nav li {
+  float: left;
+  display: inline;
+  color: black;
+  margin: 0 25px;
+}
+
+ul.about-nav li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+ul.about-nav li:hover{
+ border-bottom: 2px solid #b32440;
+}
+
+div.abouttitle {
+  margin: 0 auto;
+  width: 50%;
+  padding: 200px 0 300px 0;
+}
+
+h3.headertitle {
+  text-align: center;
+  color: white;
+}
+
+div.abouttitle img {
+  display: block;
+  margin: 0 auto;
+}
+
+ul.favicon li.lang{
+ margin-bottom: 10px;
+}
+
+ul.favicon li.lang:hover{
+ border-bottom: 2px solid #b32440;
+}
+
+.aboutdash {
+  width: 50px;
+  border: 4px solid #8B0000;
+}
+
+h2.aboutsub {
+  font-size: 3em;
+}
+
+div.aboutdash p {
+  font-size: 1.1em;
+}
+
+section.chef {
+  background-image: url(assets/chef2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 1100px;
+  position: relative;
+}
+
+div.happy {
+  width: 500px;
+  height: 400px;
+  background-color: palevioletred;
+  position: absolute;
+  top: 505px;
+  left:1050px;
+  box-shadow: 0 50px 0 rgba(255,255,255, 0.4), 0 -35px 0 rgba(255,255,255, 0.4);
+}
+
+div.happy p.awesome {
+  font-size: 1.4em;
+}
+
+div.happy p, div.happy h2 {
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+p.happychef {
+  padding: 20px 40px;
+  color: lightgrey;
+}
+
+
+/*
+StyleSheet for Blog Page Below*/
+
+.wrapperblog {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.wrapperblog2 {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+header.blog {
+  width: 100%;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/blog_hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+div.loadbutton {
+  width: 100%;
+  text-align: center;
+}
+
+a.load {
+  color: black;
+  text-decoration: none;
+  border: 1px solid #8B0000;
+  padding: 10px 15px;
+  margin-left: 30px;
+}
+
+a.load:hover {
+background-color: goldenrod;
+    color: white;
+}
+
+section.wineblog {
+  background-image: url(assets/wine4.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 1100px;
+  position: relative;
+}
+
+div.categorybar {
+  width: 100%;
+  height: 70px;
+  color: white;
+  background-color: #8B0000;
+  text-align: center;
+  padding: 30px;
+   padding-top: 25px;
+}
+
+div.categorybar p, div.categorybar select {
+  display: inline;
+}
+
+div.withinbar a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-left: 30px;
+}
+
+select.dropdown {
+  color: white;
+  border: none;
+  background-color: #8B0000;
+  border-bottom: 1px solid white;
+  padding-right: 50px;
+  margin-left: 50px;
+}
+
+.item {
+  border: 2px solid black;
+  float: left;
+  width: calc(33.3333% - 20px);
+  margin: 10px;
+}
+
+.item img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text {
+  padding: 30px;
+}
+
+.dash {
+  border-top: 2px solid palevioletred;
+  padding-top: 15px;
+}
